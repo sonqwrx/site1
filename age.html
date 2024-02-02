@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+    <link rel="stylesheet" type="text/css" href="css/age.css"> 
+	
+</head>
+<body>
+
+	<script type="text/javascript">
+		let age = +prompt("Введіть Ваш вік", '55');
+		if(age>=18 && age<=100){
+			document.write("<div>Доступ до сайту надано</div>");
+		} else{
+			document.write("<div>Вхід заборонено, повертайтесь коли вам виповниться 18</div>");
+		}
+	</script>
+
+</body>
+</html>

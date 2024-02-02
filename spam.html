@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/spam.css">
+    <title>Spam</title>
+</head>
+<body>
+    <script>
+        function hasSpamWords() {
+  const userText = prompt("Введіть текст:","Безкоштовно");
+  
+  if (userText === null) {
+    return false; 
+  }
+
+  const lowerCaseText = userText.toLowerCase();
+  return lowerCaseText.includes("безкоштовно") || lowerCaseText.includes("гарантія")|| lowerCaseText.includes("спам")|| lowerCaseText.includes("bezcoshtovno")|| lowerCaseText.includes("garantiya");
+}
+
+
+const containsSpam = hasSpamWords();
+
+if (containsSpam) {
+  document.write("<div>Текст містить слова 'безкоштовно', 'спам' або 'гарантія'. Це спам</div>");
+} else {
+  document.write("<div>Текст не містить спамових слів.</div>");
+}
+
+
+    </script>
+</body>
+</html>

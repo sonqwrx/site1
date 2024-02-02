@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    background-image: url(https://i.pinimg.com/564x/9c/ab/43/9cab430d761b08fa2f0dc85934df7880.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+table{
+     justify-content: center;
+    size: 50px;
+    color: black;
+    margin-left: 43%;
+    margin-top: 40px;
+    font-family: 'Russo One', sans-serif;
+}
+    

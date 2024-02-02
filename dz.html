@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кола</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1500px" height="1000px"></canvas>
+
+	<script type="text/javascript">
+		let canvas = document.getElementById('myCanvas');
+        let cxt = canvas.getContext('2d');
+
+        let number =+prompt("Скільки кіл ви бажаєте?");
+        let max = 40;
+        let min = 5;
+
+        let colors =["#F14A45","#37E1EF","#D637EF","#58EF37","#EFE137","#EF4237"];
+        let numberColor = colors.length;
+
+        for(let i = 0; i < number; i++){
+        let width = Math.random() * 2000;
+        let height = Math.random() * 1000;
+        let radius = min + (Math.random() * (max-min));
+        let colorIndex = Math.round(Math.random() * (numberColor - 1));
+        let color = colors[colorIndex];
+
+
+        cxt.beginPath();
+        cxt.arc(width, height, radius, Math.PI* 0, Math.PI*2, false);
+        cxt.fillStyle = color;
+        cxt.fill();
+    }
+
+	</script>
+</body>
+</html>

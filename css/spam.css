@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+   background-image: url(https://i.pinimg.com/564x/0b/07/53/0b07533d867fcb0fec64a50f4e3616d3.jpg) ;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   text-align: center;
+}
+div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 400px;
+    font-size: 25px;
+    font-family: 'Press Start 2P', system-ui;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 10px auto;
+      margin-top: 15%;
+      background-color: #131110e4;
+  }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/rectangle.css">
+    <title>Rectangle</title>
+</head>
+    <body>
+        <script>
+        let a=+prompt("what is the first side of rectangle",3);
+        let b=+prompt("what is the second side of rectangle",4);
+        //let S=(side1*side2)/2;
+        let P=(a+b+a+b);
+        let p=(a+b)/2;
+        let S=a*b;
+        document.write(`<div><p>Площа прямокутника зі сторонами ${a}, ${b} дорівнює ${S}<br></div></p>`);
+        document.write(`<div><p>Периметр прямокутника зі сторонами ${a}, ${b} дорівнює ${P}</div></p>`);
+</script>
+</body>
+</html>

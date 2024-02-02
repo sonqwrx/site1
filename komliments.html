@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kompliments.css">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        function compliments(){
+            let compliments=["смішний","розумний","крутий", "геніальний", "радісний","усміхнений","добрий","креивний","працьовитий","позитивний","стильний"]
+let animals=["полрний ведмідь", "кіт","кит","метелик","каченя","кролик","сонечко", "мавпа","носоріг","білка","лев","курча","корова","пес","олень","пташка"]
+let colors=["#EE89FA","#D96BE6","#B94BC6","#7B2086","#B165F4","#9256C8","#F15CF5","#F55CB2 "]
+        
+let number= +document.compliments.a.value;
+let answer=document.getElementById("answer");
+let string='';
+if(isNaN(number)){
+    string="Ви ввели не число."
+}else{
+        for (i = 1; i <= number; i++){
+
+
+            let rand1=Math.floor(Math.random()*colors.length)
+            let rand2=Math.floor(Math.random()*compliments.length)
+            let rand3=Math.floor(Math.random()*animals.length)
+            
+
+           string+=`<p style='color:${colors[rand1]}'>${i} )Ти такий ${compliments[rand2]} як ${animals[rand3]}! </p>`;
+       } }
+
+        answer.innerHTML = string;
+    }    
+    </script>
+    <center><div class="container">
+        <h1>Make your day better with compliments</h1>
+        <form name="compliments" action="javascript:compliments()">
+            How many compliments do you want? <input class="side" name="a" type="text" value="" size="4"><br>
+            <input class="btn" type="submit" value="Submit">
+            <input class="btn" type="reset" name="reset" value="Reset"><br>
+            
+        </form>
+         <span id="answer"></span>
+        </div>
+      </center>
+    
+</body>
+</html>

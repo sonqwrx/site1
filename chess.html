@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Шахівниця</title> 
+    <style> 
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+<canvas id="chessBoard" width="400" height="400" style="border: 2px solid #000000;" ></canvas> 
+<script> 
+    let canvas = document.getElementById("chessBoard"); 
+    let context = canvas.getContext("2d"); 
+    let cellSize = 50; 
+ 
+    for (let row = 0; row < 8; row++) { 
+        for (let col = 0; col < 8; col++) { 
+            let x = col * cellSize; 
+            let y = row * cellSize; 
+ 
+     
+            if ((row + col) % 2 === 0) { 
+                context.fillStyle = "white"; 
+            } else { 
+                context.fillStyle = "black"; 
+            } 
+            context.fillRect(x, y, cellSize, cellSize); 
+        } 
+    } 
+</script> 
+ 
+</body> 
+</html>

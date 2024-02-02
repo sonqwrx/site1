@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/power.css">
+    <title>Power</title>
+</head>
+<body>
+    <script>
+        function calculatePower(x, n) {
+       let result = 1;
+   
+       for (let i = 0; i < n; i++) {
+           result *= x;
+       }
+   
+       return result;
+   }
+   
+   let x = parseFloat(prompt("Введіть значення x:","6"));
+   let n = parseInt(prompt("Введіть ступінь n:","5"));
+   
+   let result = calculatePower(x, n);
+   document.write(`<div><p>${x} в ступені ${n} дорівнює: ${result}</div></p>`);
+   
+   
+   </script>
+</body>
+</html>

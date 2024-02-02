@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/triangle.css">
+    <title>Трикутник</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("what is the first side of triangle",3);
+        let b=+prompt("what is the second side of triangle",4);
+        let c=+prompt("what is the third side of triangle",5);
+        //let S=(side1*side2)/2;
+        let P=(a+b+c);
+        let p=(a+b+c)/2;
+        let S= Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        document.write(`<div><p>площа трикутника зі сторонами ${a}, ${b}, ${c} дорівнює ${S}<br></div></p>`);
+        document.write(`<div><p>периметр трикутника зі сторонами ${a}, ${b}, ${c} дорівнює ${P}</div></p>`);
+</script>
+        </body>
+</html>

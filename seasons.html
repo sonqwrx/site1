@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/seasons.css">
+    <title>Пори року</title>
+</head>
+<body>
+    <script>
+        function grades(){
+        let grade = +document.grade_level.a.value;
+        let answer=document.getElementById("level")
+switch(grade){
+    case 12:
+    case 1:
+    case 2:
+        string='Зима';
+        break;
+    case 4:
+    case 5:
+    case 3:
+        string='Весна';
+        break;
+    case 7:
+    case 8:
+    case 6:
+        string='Літо';
+        break;
+    case 10:
+    case 11:
+    case 9:
+        string='Осінь';
+        break;
+default:
+    string='Такого місяця не існуєю'
+}
+answer.innerHTML = string;
+}
+    </script>
+    <div>
+        <h1>Введіть порядковий номер місяця</h1>
+        <form name="grade_level" action="javascript:grades()">
+        Введіть місяць:<input class="grade" name="a" type="text" value="" size="4"><br>
+        <button>Відповідь</button>
+        </form>
+        Цей місяць в таку пору року: <span id="level"></span><br/>
+    </div>
+</body>
+</html>

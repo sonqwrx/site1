@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Логін</title>
+</head>
+<body>
+    <script>
+    let login = prompt("Введіть логін користувача:", "User");
+    if (login === "User") {
+ let password = prompt ("Введіть пароль: ", "password")
+ if (password === null) {
+ document.write("<div><p>Вхід скасований</div></p>");
+ } else if (password ==="password") {
+ document.write ("<div><p>Ласкаво просимо!</div></p>");
+ } 
+ else {
+ document.write ("<div><p>Пароль невірний!</div></p>");
+ } 
+ }
+ else if (login === null) {
+ document.write ("<div><p>Вхід скасований</div></p>") ;
+ }
+ else {
+ document.write("<div><p>Користувач невизначений</div></p>" ) ;
+ }</script>
+</body>
+</html>

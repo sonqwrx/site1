@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Squares</title>
+</head>
+<body>
+
+	<canvas id="myCanvas" width="1000" height="1000"></canvas>
+
+	<script type="text/javascript">
+		let a = document.getElementById('myCanvas');
+        let axt = a.getContext('2d');
+
+        axt.globalAlpha = 0.5;
+        axt.fillStyle = '#ff0000';
+        axt.fillRect(70, 70, 300, 300);
+        axt.fillStyle = '#00ff00';
+        axt.fillRect(140, 140, 300, 300);
+        axt.fillStyle = '#0000ff';
+        axt.fillRect(210, 210, 300, 300);
+
+	</script>
+
+</body>
+</html>

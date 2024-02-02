@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/person.css"> 
+    <title>Людина-павук</title>
+  
+</head>
+<body>
+    <script>
+ 
+
+function Spiderman(){
+    let name = document.Spiderman.a.value;
+    let answer=document.getElementById("answer2");
+    let lowCaseName = name.toLowerCase(); 
+if (lowCaseName == 'том холанд'||lowCaseName == 'том'||lowCaseName == 'tom'||lowCaseName == 'tom holand'){
+    string='Правильно. Актора, що зіграв людину-павука звати '+name;
+} else{
+    string='На жаль, Ви помилились. Актора звати Том Холанд.';
+}
+answer.innerHTML = string;
+}
+
+    </script>
+    
+   <center> <div >
+    
+
+        <p style="font-weight: 900 ;">Запитання</p> 
+      <p>Як звати актора, що зіграв людину-павука в останньому фільмі?</p>
+        <form name="Spiderman" action="javascript:Spiderman()">
+            Введіть  відповідь:<input class="side" name="a" type="text" value="" size="4"><br>
+            <button>
+                Яка відповідь?
+              </button>
+              
+        </form>
+        <span id="answer2"></span><br/>
+     
+    </div></center>
+</body>
+</html>

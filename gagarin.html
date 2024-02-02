@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gagarin.css">
+    <title>Космос</title>
+</head>
+<body>
+    <script>
+        function fly(){
+            let name = document.fly.a.value;
+            let answer=document.getElementById("answer2");
+            let lowCaseName = name.toLowerCase(); 
+        if (lowCaseName == '1961'){
+            string='Правильно.';
+        } else{
+            string='На жаль, Ви помилились. Він був у 1961 році.';
+        }
+        answer.innerHTML = string;
+        }
+        
+            </script>
+            
+           <center> <div >
+            
+        
+                <p style="font-weight: 900 ;">Запитання</p> 
+              <p>В якому році був перший політ людиною у космос?</p>
+                <form name="fly" action="javascript:fly()">
+                    Введіть  відповідь:<input class="side" name="a" type="text" value="" size="4"><br>
+                    <button>
+                        Яка відповідь?
+                      </button>
+                      
+                </form>
+                <span id="answer2"></span><br/>
+             
+            </div></center>
+</body>
+</html>

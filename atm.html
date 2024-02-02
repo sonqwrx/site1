@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банкомат</title>
+    <link rel="stylesheet" type="text/css" href="css/atm.css"> 
+</head>
+<body>
+    <script class="money">
+        function money(){
+        let money =+document.money.a.value;
+        let answer=document.getElementById("answer");
+        if(isNaN(money)){
+          string='<br>Ви ввели не число.'
+        }else if (+money < 50 ||+money > 3000){
+    string='<br>На жаль ви можете зняти гроші на суму від 50 грн до 3000 грн.';
+}else if(+money%10!=0){
+    string= `<br>Найменша купюра банкомату - 10 грн, тому залишок банкомат візьме як комісію.
+    Ви можете забрати свої ${money - money%10} грн. Банку переводится ${money%10} грн.`
+}else{
+    string=`Заберіть свої гроші у сумі ${money} грн.`
+}
+answer.innerHTML = string
+  }
+    </script>
+    <center>
+    <div class="container">
+       <center><p><b>БАНКОМАТ СОНІ</b></p></center>
+<form name="money" action="javascript:money()">
+
+    <p style="margin-bottom: -20px;">Яку суму бажаєте зняти?</p><br>
+      Увага!<br>Діапазон видачі- від 50 до 3000грн<input class="side" name="a" type="text" value="" size="4">
+<button class="button">
+Давай
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+<button class="button">
+Назад
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+    <span id="answer"></span>
+</form>
+
+    </div></center>
+</body>
+</html>
